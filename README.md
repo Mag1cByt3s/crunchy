@@ -90,6 +90,8 @@ Extend with Dictionaries
 python3 crunchy.py --inputs "CompanyName" --append-dictionary /usr/share/wordlists/rockyou.txt --output extended_list.txt
 ```
 
+<br>
+
 ---
 
 <br>
