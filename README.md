@@ -13,10 +13,10 @@
 <br>
 
 ## Features  
-- **Dynamic Input Handling**: Combine names, dates, company names, patterns, and more.  
-- **Advanced Permutation Engine**: Precise control over combinations, lengths, and repetitions.  
+- **Dynamic Input Handling**: Combine company names, dates, and years seamlessly.  
+- **Advanced Casing and Normalization**: Automatically handles numbers, special characters, and casing for diverse results.  
 - **Intuitive CLI**: A user-friendly command-line interface, ideal for scripting and automation.  
-- **Customizable Rulesets**: Create and apply rules to fine-tune your output.  
+- **Blazing Fast**: Generates wordlists in seconds.  
 
 <br>
 
@@ -39,14 +39,14 @@
    ```bash
    git clone https://github.com/Mag1cByt3s/crunchy.git
    cd crunchy
-   ```
+   ```  
    <br>
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-   ```
+   ```  
    <br>
-3. Run the program::
+3. Run the program:
    ```bash
    python3 crunchy.py --help
    ```
@@ -61,11 +61,20 @@
 
 <br>
 
-Generate a wordlist by providing inputs like names, years, and patterns:
-Basic Usage:
+Generate a wordlist by providing a company name and year range:  
+
+### Basic Usage:
 ```bash
-python3 crunchy.py --inputs "John,2024,Secure" --length 6-12 --output mywordlist.txt
+python3 crunchy.py --company TechNova --start-year 2023 --end-year 2025 --output TechNova.txt
 ```
+
+### Options:  
+| Option             | Description                                             | Example                    |  
+|--------------------|---------------------------------------------------------|----------------------------|  
+| `--company`        | Company name, including numbers or special characters  | `TechNova`                |  
+| `--start-year`     | Start year for generating year combinations            | `2023`                    |  
+| `--end-year`       | Optional end year for a range of years                 | `2025`                    |  
+| `--output`         | File to save the generated wordlist                   | `output.txt`              |  
 
 <br>
 
@@ -77,19 +86,29 @@ python3 crunchy.py --inputs "John,2024,Secure" --length 6-12 --output mywordlist
 
 <br>
 
-Generate a Wordlist Based on Names and Years
+### 1. Generate a Wordlist for a Company Name with Year Range:
 ```bash
-python3 crunchy.py --inputs "Alice,Bob,2024" --length 8-16 --output names_years.txt
+python3 crunchy.py --company TechNova --start-year 2023 --end-year 2025 --output TechNova.txt
+```
+Output example:
+```
+TechNova
+technova
+TECHNOVA
+2023TechNova
+2024TechNova
+2025TechNova
+TechNova2023
+TechNova2024
+TechNova2025
+TechNova-2023
+TechNova-2024
+TechNova-2025
 ```
 
-Generate Using Patterns
+### 2. Generate for a Single Year:
 ```bash
-python3 crunchy.py --inputs "admin,root,secure" --pattern "@n@d!" --output admin_list.txt
-```
-
-Extend with Dictionaries
-```bash
-python3 crunchy.py --inputs "CompanyName" --append-dictionary /usr/share/wordlists/rockyou.txt --output extended_list.txt
+python3 crunchy.py --company SecureCorp --start-year 2022 --output SecureCorp2022.txt
 ```
 
 <br>
@@ -136,3 +155,4 @@ This project is licensed under the GPL3 License.
 ## Acknowledgments
 
 crunchy is inspired by crunch and aims to modernize wordlist generation with enhanced flexibility and features.
+
