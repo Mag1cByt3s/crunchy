@@ -65,8 +65,7 @@ Generate a wordlist by providing a company name and year range:
 
 ### Basic Usage:
 ```bash
-python3 crunchy.py --company TechNova --start-year 2023 --end-year 2025 --output TechNova.txt
-```
+python3 crunchy.py --company <company> --start-year <year> --end-year <year> --output <company.txt>
 
 ### Options:  
 | Option             | Description                                             | Example                    |  
@@ -108,7 +107,7 @@ TechNova-2025
 
 ### 2. Generate for a Single Year:
 ```bash
-python3 crunchy.py --company SecureCorp --start-year 2022 --output SecureCorp2022.txt
+python3 crunchy.py --company TechNova --start-year 2022 --output TechNova2022.txt
 ```
 
 <br>
