@@ -69,6 +69,8 @@ python3 crunchy.py --inputs "John,2024,Secure" --length 6-12 --output mywordlist
 
 ---
 
+<br>
+
 ## Examples
 
 <br>
