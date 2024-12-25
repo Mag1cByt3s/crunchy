@@ -40,10 +40,12 @@
    git clone https://github.com/Mag1cByt3s/crunchy.git
    cd crunchy
    ```
+   <br>
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+   <br>
 3. Run the program::
    ```bash
    python3 crunchy.py --help
