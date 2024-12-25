@@ -90,25 +90,74 @@ python3 crunchy.py --company <company> --start-year <year> --end-year <year> --o
 ```bash
 python3 crunchy.py --company TechNova --start-year 2023 --end-year 2025 --output TechNova.txt
 ```
+
 Output example:
 ```
-TechNova
-technova
-TECHNOVA
+2023TECHNOVA
 2023TechNova
+2023technova
+2024TECHNOVA
 2024TechNova
+2024technova
+2025TECHNOVA
 2025TechNova
-TechNova2023
-TechNova2024
-TechNova2025
+2025technova
+TECHNOVA
+TECHNOVA-2023
+TECHNOVA-2024
+TECHNOVA-2025
+TECHNOVA2023
+TECHNOVA2024
+TECHNOVA2025
+TECHNOVA_2023
+TECHNOVA_2024
+TECHNOVA_2025
+TechNova
 TechNova-2023
 TechNova-2024
 TechNova-2025
+TechNova2023
+TechNova2024
+TechNova2025
+TechNova_2023
+TechNova_2024
+TechNova_2025
+technova
+technova-2023
+technova-2024
+technova-2025
+technova2023
+technova2024
+technova2025
+technova_2023
+technova_2024
+technova_2025
 ```
+
+<br>
 
 ### 2. Generate for a Single Year:
 ```bash
 python3 crunchy.py --company TechNova --start-year 2022 --output TechNova2022.txt
+```
+
+Output example:
+```
+2022TECHNOVA
+2022TechNova
+2022technova
+TECHNOVA
+TECHNOVA-2022
+TECHNOVA2022
+TECHNOVA_2022
+TechNova
+TechNova-2022
+TechNova2022
+TechNova_2022
+technova
+technova-2022
+technova2022
+technova_2022
 ```
 
 <br>
