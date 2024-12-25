@@ -66,6 +66,7 @@ Generate a wordlist by providing a company name and year range:
 ### Basic Usage:
 ```bash
 python3 crunchy.py --company <company> --start-year <year> --end-year <year> --output <company.txt>
+```
 
 ### Options:  
 | Option             | Description                                             | Example                    |  
