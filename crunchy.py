@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 import itertools
 import re
@@ -21,6 +23,13 @@ def generate_wordlist(company, start_year, end_year=None):
             wordlist.add(f"{year}{variation}")
             wordlist.add(f"{variation}-{year}")
             wordlist.add(f"{variation}_{year}")
+
+        # Add custom patterns
+        wordlist.add(f"{variation}123")
+        wordlist.add(f"{variation}01!")
+
+    # Add a universal pattern
+    wordlist.add("password123")
 
     return wordlist
 
