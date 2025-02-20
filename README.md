@@ -93,6 +93,29 @@ python3 crunchy.py --company TechNova --start-year 2023 --end-year 2025 --output
 
 Output example:
 ```
+123
+123!
+123123
+1231234
+1231234!
+12312345
+12312345!
+123123456
+123123456!
+1234
+1234!
+12345
+12345!
+123456
+123456!
+1234567
+1234567!
+12345678
+12345678!
+123456789
+123456789!
+1234567890
+1234567890!
 2023TECHNOVA
 2023TechNova
 2023technova
@@ -127,6 +150,7 @@ TechNova_2023
 TechNova_2024
 TechNova_2025
 password123
+password123!
 technova
 technova-2023
 technova-2024
@@ -139,6 +163,8 @@ technova2025
 technova_2023
 technova_2024
 technova_2025
+welcome123
+welcome123!
 ```
 
 <br>
@@ -150,6 +176,29 @@ python3 crunchy.py --company TechNova --start-year 2022 --output TechNova2022.tx
 
 Output example:
 ```
+123
+123!
+123123
+1231234
+1231234!
+12312345
+12312345!
+123123456
+123123456!
+1234
+1234!
+12345
+12345!
+123456
+123456!
+1234567
+1234567!
+12345678
+12345678!
+123456789
+123456789!
+1234567890
+1234567890!
 2022TECHNOVA
 2022TechNova
 2022technova
@@ -166,12 +215,15 @@ TechNova123
 TechNova2022
 TechNova_2022
 password123
+password123!
 technova
 technova-2022
 technova01!
 technova123
 technova2022
 technova_2022
+welcome123
+welcome123!
 ```
 
 <br>

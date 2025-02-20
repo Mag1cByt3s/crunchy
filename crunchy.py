@@ -30,6 +30,9 @@ def generate_wordlist(company, start_year, end_year=None):
 
     # Add a universal pattern
     wordlist.add("password123")
+    wordlist.add("password123!")
+    wordlist.add("welcome123")
+    wordlist.add("welcome123!")
     wordlist.add("123")
     wordlist.add("123!")
     wordlist.add("1234!")
